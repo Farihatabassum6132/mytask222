@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <h2>🤖 FAQ Assistant</h2>
+            <p>Ready to ask any question</p>
+        </div>
+
+        <!-- Chat Messages Box -->
+        <div class="chat-box" id="chatBox">
+            <div class="message bot-message">
+                Hello! How can I help you? Feel free to ask.
+            </div>
+        </div>
+
+        <!-- Chat Input Area -->
+        <div class="chat-input-area">
+            <input type="text" id="userInput" placeholder="write your question..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
